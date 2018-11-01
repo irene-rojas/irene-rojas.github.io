@@ -139,7 +139,7 @@ a:link {
  * ----------------------------------------
  */
  .slide-top {
-	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
  @keyframes slide-top {
@@ -178,7 +178,7 @@ a:link {
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
     place-items: center;
     grid-row-gap: 15px;
     text-align: center;
@@ -207,19 +207,25 @@ img {
 }
 
 /* start project samples */
-.gameOn {
+
+.grids {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
+}
+
+.gameOn {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .healthyHeads {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 .eveningGenerator {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .brooklyn {
@@ -228,13 +234,13 @@ img {
 }
 
 .pixarTrivia {
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .crystalGame {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 /* end project samples */
 
