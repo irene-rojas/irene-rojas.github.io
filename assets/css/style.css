@@ -287,14 +287,14 @@ img {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: white;
     color: black;
     border-radius: 5px;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: white;
+    background-color: #2196f3;
     color: black;
     transform: rotateY(180deg);
     border-top-left-radius: 5px;
