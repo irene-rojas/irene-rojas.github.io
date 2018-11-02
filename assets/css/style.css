@@ -62,17 +62,24 @@ a:link {
 }
 
 .navHome {
-    grid-column: 10/11;
+    grid-column: 9/10;
     grid-row: 1 / 2;
     place-items: center;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .navProjects {
-    grid-column: 11/12;
+    grid-column: 10/11;
     grid-row: 1 / 2;
     place-items: center;
-    font-size: 16pt;
+    font-size: 14pt;
+}
+
+.navGithub {
+    grid-column: 11/12;
+    grid-row: 1/2;
+    place-items: center;
+    font-size: 14pt;
 }
 
 .navSWM {
@@ -81,7 +88,7 @@ a:link {
     justify-self: end;
     font-size: 12pt;
     text-align: right;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
 }
 
 .redLink:hover {
@@ -193,7 +200,6 @@ img {
 .imgCaption {
     background-color: white;
     border-bottom-left-radius: 5px;
-
     border-bottom-right-radius: 5px;
 }
 
@@ -203,15 +209,9 @@ img {
     color: black;
 }
 
-/* .zoom {
-    transition: transform .2s;
-    margin: 0 auto;
-} */
-
-/* .zoom:hover {
-    transform: scale(1.02); 
-    color: #22629a;
-} */
+.cardCaption {
+    padding: 5px 10px 5px 10px;
+}
 
 /* start project samples */
 
@@ -251,15 +251,14 @@ img {
 }
 /* end project samples */
 
-
 /* end projects ------------------- */
 
 
+/* flip card functionality */
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -295,13 +294,10 @@ img {
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: white;
+    color: black;
     transform: rotateY(180deg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
 
-  .cardCaption {
-      padding: 10px;
-  }
