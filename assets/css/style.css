@@ -230,24 +230,24 @@ img {
     grid-row: 1/2;
 }
 
-.eveningGenerator {
+.futurama {
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
-.brooklyn {
+.eveningGenerator {
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-.pixarTrivia {
+.brooklyn {
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-.crystalGame {
+.pixarTrivia {
     grid-column: 1/2;
-    grid-row: 4/5;
+    grid-row: 5/6;
 }
 /* end project samples */
 
@@ -272,7 +272,7 @@ img {
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Do a horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
