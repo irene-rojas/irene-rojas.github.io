@@ -201,7 +201,7 @@ img {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-top: 0.33px solid black;
+    /* border-top: 0.4px solid black; */
 }
 
 .card {
@@ -302,5 +302,6 @@ img {
     transform: rotateY(180deg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom: 0.33px solid black;
   }
 
