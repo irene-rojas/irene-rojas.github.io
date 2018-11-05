@@ -201,6 +201,7 @@ img {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top: 0.33px solid black;
 }
 
 .card {
@@ -294,7 +295,9 @@ img {
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #2196f3;
+    /* background-color: #2196f3; */
+    background-color: white;
+    opacity: 0.9;
     color: black;
     transform: rotateY(180deg);
     border-top-left-radius: 5px;
