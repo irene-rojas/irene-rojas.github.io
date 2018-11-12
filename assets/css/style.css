@@ -101,7 +101,7 @@ a:link {
 .masterContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 30rem 1fr 75px 1fr;
+    grid-template-rows: 15rem 1fr 75px 1fr;
     align-items: center;
     align-content: center;
     grid-row-gap: 0px;
@@ -226,7 +226,7 @@ img {
     grid-row: 1/2;
 }
 
-.healthyHeads {
+.nytreact {
     grid-column: 3/4;
     grid-row: 1/2;
 }
@@ -236,9 +236,14 @@ img {
     grid-row: 3/4;
 }
 
-.eveningGenerator {
+.healthyHeads {
     grid-column: 2/3;
     grid-row: 3/4;
+}
+
+.eveningGenerator {
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
 
 .brooklyn {
