@@ -216,8 +216,13 @@ img {
 
 /* start project samples */
 
-.grids {
+.ezcycle {
     grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grids {
+    grid-column: 3/4;
     grid-row: 1/2;
 }
 
@@ -227,29 +232,34 @@ img {
 }
 
 .nytreact {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.futurama {
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
-.healthyHeads {
+.futurama {
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-.eveningGenerator {
+.healthyHeads {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.brooklyn {
     grid-column: 1/2;
     grid-row: 5/6;
 }
 
-.brooklyn {
-    grid-column: 3/4;
-    grid-row: 3/4;
+.eveningGenerator {
+    grid-column: 2/3;
+    grid-row: 5/6;
 }
+
+/* .pixarTrivia {
+    grid-column: 1/2;
+    grid-row: 5/6;
+} */
 
 .pixarTrivia {
     grid-column: 1/2;
@@ -274,7 +284,7 @@ img {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1.2s;
     transform-style: preserve-3d;
   }
   
