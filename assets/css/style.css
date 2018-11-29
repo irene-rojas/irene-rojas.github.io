@@ -217,43 +217,48 @@ img {
 
 /* start project samples */
 
-.ezcycle {
-    grid-column: 1/2;
-    grid-row: 1/2;
+.gameOn {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.numberGuess {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .grids {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
-.gameOn {
-    grid-column: 2/3;
-    grid-row: 1/2;
+.ezcycle {
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .nytreact {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 3/4;
 }
 
 .futurama {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.healthyHeads {
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-.brooklyn {
+.healthyHeads {
     grid-column: 1/2;
     grid-row: 5/6;
 }
 
-.eveningGenerator {
+.brooklyn {
     grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.eveningGenerator {
+    grid-column: 3/4;
     grid-row: 5/6;
 }
 
@@ -262,10 +267,6 @@ img {
     grid-row: 5/6;
 } */
 
-.pixarTrivia {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
 /* end project samples */
 
 /* end projects ------------------- */
