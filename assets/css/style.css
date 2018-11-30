@@ -193,7 +193,7 @@ a:link {
 }
 
 img {
-    width: 300px;
+    width: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -275,8 +275,8 @@ img {
 /* flip card functionality */
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 233px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
