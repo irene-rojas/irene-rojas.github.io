@@ -188,7 +188,7 @@ a:link {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     place-items: center;
-    grid-row-gap: 15px;
+    grid-row-gap: 25px;
     text-align: center;
 }
 
