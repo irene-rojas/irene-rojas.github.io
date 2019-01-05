@@ -27,6 +27,7 @@ a:link {
 /* start header --------------------- */
 .header {
     display: grid;
+    grid-area: header;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px;
     place-items: center;
@@ -66,6 +67,7 @@ a:link {
     grid-row: 1 / 2;
     place-items: center;
     font-size: 14pt;
+    grid-area: navHome;
 }
 
 .navProjects {
@@ -73,6 +75,7 @@ a:link {
     grid-row: 1 / 2;
     place-items: center;
     font-size: 14pt;
+    grid-area: navProjects;
 }
 
 .navGithub {
@@ -80,6 +83,7 @@ a:link {
     grid-row: 1/2;
     place-items: center;
     font-size: 14pt;
+    grid-area: navGithub;
 }
 
 .navSWM {
@@ -89,6 +93,7 @@ a:link {
     font-size: 12pt;
     text-align: right;
     /* border-left: 1px solid black; */
+    grid-area: navSWM;
 }
 
 .redLink:hover {
@@ -97,9 +102,9 @@ a:link {
 /* end header ------------------ */
 
 
-
 .masterContainer {
     display: grid;
+    grid-area: masterContainer;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 15rem 1fr 75px 1fr;
     align-items: center;
@@ -112,6 +117,7 @@ a:link {
 /* start about ------------------*/
 .aboutContainer {
     display: grid;
+    grid-area: aboutContainer;
     background-color: white;
     color: black;
     padding: 10px;
@@ -164,6 +170,7 @@ a:link {
 
 .projectsIntro {
     display: grid;
+    grid-area: projectsIntro;
     grid-column: 2/12;
     grid-row: 3/4;
     background-color: white;
@@ -181,10 +188,12 @@ a:link {
     grid-row: 4/5;
     align-self: center;
     padding-top: 15px;
+    grid-area: projects;
 }
 
 .projectsContainer {
     display: grid;
+    grid-area: projectsContainer;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     place-items: center;
@@ -220,51 +229,61 @@ img {
 .gameOn {
   grid-column: 3/4;
   grid-row: 1/2;
+  grid-area: gameOn;
 }
 
 .numberGuess {
   grid-column: 2/3;
   grid-row: 1/2;
+  grid-area: numberGuess;
 }
 
 .grids {
     grid-column: 2/3;
     grid-row: 3/4;
+    grid-area: grids;
 }
 
 .ezcycle {
     grid-column: 1/2;
     grid-row: 1/2;
+    grid-area: ezcycle;
 }
 
 .nytreact {
     grid-column: 3/4;
     grid-row: 3/4;
+    grid-area: nytreact;
 }
 
 .futurama {
     grid-column: 1/2;
     grid-row: 5/6;
+    grid-area: futurama;
 }
 
 .healthyHeads {
     grid-column: 2/3;
     grid-row: 5/6;
+    grid-area: healthyHeads;
 }
 
 .brooklyn {
     grid-column: 3/4;
     grid-row: 5/6;
+    grid-area: brooklyn;
 }
 
 .eveningGenerator {
     grid-column: 1/2;
     grid-row: 7/8;
+    grid-area: eveningGenerator;
 }
 
 .pixarReact {
     grid-column: 1/2;
     grid-row: 3/4;
+    grid-area: pixarReact;
 }
 
 /* end project samples */
