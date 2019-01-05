@@ -27,29 +27,37 @@ a:link {
 /* start header --------------------- */
 .header {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px;
+    grid-area: header;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 30px 30px 30px 30px;
     place-items: center;
     position: sticky;
     top: 0;
-    grid-column: 1 / -1;
-    align-self: center;
     background-color: white;
     z-index: 1000;
     font-size: 18pt;
+    grid-template-areas: 
+        "ireneRojas"    "ireneTitle"
+        "navHome"
+        "navProjects"
+        "navGithub"
+        "navSWM";
 }
 
 #ireneRojas {
-    grid-column: 2/ span 2;
+    grid-column: 1/2;
     grid-row: 1/2;
     place-items: center;
     font-size: 26pt;
+    grid-area: ireneRojas;
+    text-align: left;
 }
 
 #ireneTitle {
-    grid-column: 4/span 2;
+    grid-column: 2/3;
     grid-row: 1/2;
     font-size: 12pt;
+    grid-area: ireneTitle;
 }
 
 .navZoom {
@@ -62,64 +70,125 @@ a:link {
 }
 
 .navHome {
-    grid-column: 9/10;
-    grid-row: 1 / 2;
+    grid-column: 1/ span 2;
+    grid-row: 2/3;
     place-items: center;
     font-size: 14pt;
+    grid-area: navHome;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .navProjects {
-    grid-column: 10/11;
-    grid-row: 1 / 2;
+    grid-column: 1/ span 2;
+    grid-row: 3/4;
     place-items: center;
     font-size: 14pt;
+    grid-area: navProjects;
+    margin-bottom: 5px;
 }
 
 .navGithub {
-    grid-column: 11/12;
-    grid-row: 1/2;
+    grid-column: 1/ span 2;
+    /* grid-row: 1/2; */
     place-items: center;
     font-size: 14pt;
+    grid-area: navGithub;
+    margin-bottom: 5px;
 }
 
 .navSWM {
-    grid-column: 12/-1;
-    grid-row: 1 / 2;
+    grid-column: 1/ span 2;
+    /* grid-row: 1 / 2; */
     justify-self: end;
     font-size: 12pt;
-    text-align: right;
-    /* border-left: 1px solid black; */
+    text-align: left;
+    grid-area: navSWM;
+    margin-bottom: 5px;
 }
 
 .redLink:hover {
     color: red !important;
 }
+
+@media (min-width: 700px) {
+.header {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px;
+    grid-column: 1 / -1;
+    align-self: center;
+    background-color: white;
+}
+
+#ireneRojas {
+    grid-column: 2/ span 2;
+    grid-row: 1/2;
+}
+
+#ireneTitle {
+    grid-column: 4/span 2;
+    grid-row: 1/2;
+}
+
+.navHome {
+    grid-column: 9/10;
+    grid-row: 1 / 2;
+}
+
+.navProjects {
+    grid-column: 10/11;
+    grid-row: 1 / 2;
+}
+
+.navGithub {
+    grid-column: 11/12;
+    grid-row: 1/2;
+}
+
+.navSWM {
+    grid-column: 12/-1;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+}
 /* end header ------------------ */
 
 
-
+/* start masterContainer -------- */
 .masterContainer {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 15rem 1fr 75px 1fr;
+    grid-area: masterContainer;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 20rem auto 75px 1fr;
     align-items: center;
     align-content: center;
     grid-row-gap: 0px;
     height: 100%;
     z-index: 1000;
+    grid-template-areas: 
+        "aboutContainer"
+        "projectsIntro"
+        "projectsContainer";
 }
+@media (min-width: 700px) {
+    .masterContainer {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 15rem 1fr 75px 1fr;
+    }
+}
+
 
 /* start about ------------------*/
 .aboutContainer {
-    display: grid;
+    /* display: grid; */
+    grid-area: aboutContainer;
     background-color: white;
     color: black;
     padding: 10px;
     place-items: center;
-    grid-column: 2/12;
+    grid-column: 2/3;
     grid-row: 2/3;
     border-radius: 5px;
-    opacity: 0.9;
     z-index: 1000;
     margin-bottom: 50px;
 }
@@ -127,6 +196,9 @@ a:link {
 #ireneRojasPhoto {
     width: 100px;
     border-radius: 50%;
+    float: left;
+    margin: 2px;
+    padding-top: 4px;
 }
 
 #aboutText {
@@ -134,6 +206,20 @@ a:link {
     grid-row: 1/2;
     padding: 10px;
     margin: 0px;
+}
+
+@media (min-width: 700px) {
+    .aboutContainer {
+        display: grid;
+        grid-column: 2/12;
+        grid-row: 2/3;
+    }
+    
+    #ireneRojasPhoto {
+        width: 100px;
+        border-radius: 50%;
+    }
+    
 }
 
 /* ----------------------------------------------
@@ -164,32 +250,35 @@ a:link {
 
 .projectsIntro {
     display: grid;
-    grid-column: 2/12;
+    grid-area: projectsIntro;
+    grid-column: 2/3;
     grid-row: 3/4;
     background-color: white;
     color: black;
     place-items: center;
     border-radius: 5px;
     height: 50px;
-    opacity: 0.9;;
+    /* opacity: 0.9; */
+    /* margin-bottom: 25px; */
+}
+
+@media (min-width: 700px) {
+    .projectsIntro {
+        grid-column: 2/12;
+        grid-row: 3/4;
+    }
 }
 
 
-/* start projects ---------------*/
-.projects {
-    grid-column: 1 / -1;
-    grid-row: 4/5;
-    align-self: center;
-    padding-top: 15px;
-}
-
+/* start projectsContainer */
 .projectsContainer {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    place-items: center;
-    grid-row-gap: 25px;
-    text-align: center;
+    grid-row-gap: 15px;
+    padding-top: 15px;
 }
 
 img {
@@ -202,7 +291,7 @@ img {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* border-top: 0.4px solid black; */
+    text-align: center;
 }
 
 .card {
@@ -216,60 +305,178 @@ img {
 }
 
 /* start project samples */
-
-.gameOn {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.numberGuess {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.grids {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
 .ezcycle {
-    grid-column: 1/2;
+    grid-column: 1/-1;
     grid-row: 1/2;
 }
 
-.nytreact {
-    grid-column: 3/4;
+.numberGuess {
+    grid-column: 1/-1;
     grid-row: 3/4;
 }
 
-.futurama {
-    grid-column: 1/2;
+.gameOn {
+    grid-column: 1/-1;
     grid-row: 5/6;
-}
-
-.healthyHeads {
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-
-.brooklyn {
-    grid-column: 3/4;
-    grid-row: 5/6;
-}
-
-.eveningGenerator {
-    grid-column: 1/2;
-    grid-row: 7/8;
 }
 
 .pixarReact {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 1/-1;
+    grid-row: 7/8;
 }
 
+.grids {
+    grid-column: 1/-1;
+    grid-row: 9/10;
+}
+
+.nytreact {
+    grid-column: 1/-1;
+    grid-row: 11/12;
+}
+
+.futurama {
+    grid-column: 1/-1;
+    grid-row: 13/14;
+}
+
+.healthyHeads {
+    grid-column: 1/-1;
+    grid-row: 15/16;
+}
+
+.brooklyn {
+    grid-column: 1/-1;
+    grid-row: 17/18;
+}
+
+.eveningGenerator {
+    grid-column: 1/-1;
+    grid-row: 19/20;
+}
+
+@media (min-width: 700px) {
+.gameOn {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  
+  .numberGuess {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .grids {
+      grid-column: 2/3;
+      grid-row: 3/4;
+  }
+  
+  .ezcycle {
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+  
+  .nytreact {
+      grid-column: 3/4;
+      grid-row: 3/4;
+  }
+  
+  .futurama {
+      grid-column: 1/2;
+      grid-row: 5/6;
+  }
+  
+  .healthyHeads {
+      grid-column: 2/3;
+      grid-row: 5/6;
+  }
+  
+  .brooklyn {
+      grid-column: 3/4;
+      grid-row: 5/6;
+  }
+  
+  .eveningGenerator {
+      grid-column: 1/2;
+      grid-row: 7/8;
+  }
+  
+  .pixarReact {
+      grid-column: 1/2;
+      grid-row: 3/4;
+  }
+}
+
+@media (min-width: 700px) {
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+        place-items: center;
+        grid-row-gap: 25px;
+        text-align: center;
+        grid-column: 1 / -1;
+        grid-row: 4/5;
+        align-self: center;
+    }
+    
+    
+    /* start project samples */
+    
+    .gameOn {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    
+    .numberGuess {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    
+    .grids {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .ezcycle {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .nytreact {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .futurama {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .healthyHeads {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    
+    .brooklyn {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+    
+    .eveningGenerator {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    .pixarReact {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
 /* end project samples */
 
-/* end projects ------------------- */
+/* end projectsContainer ------------------- */
 
 
 /* flip card functionality */
