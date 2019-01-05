@@ -122,7 +122,7 @@ a:link {
 .masterContainer {
     display: grid;
     grid-area: masterContainer;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 10px 1fr 10px;
     grid-template-rows: 15rem 1fr 75px 1fr;
     align-items: center;
     align-content: center;
@@ -133,23 +133,27 @@ a:link {
 
 /* start about ------------------*/
 .aboutContainer {
-    display: grid;
+    /* display: grid; */
     grid-area: aboutContainer;
     background-color: white;
     color: black;
     padding: 10px;
     place-items: center;
-    grid-column: 2/12;
+    grid-column: 2/3;
     grid-row: 2/3;
     border-radius: 5px;
     opacity: 0.9;
     z-index: 1000;
     margin-bottom: 50px;
+    margin: 0 auto;
 }
 
 #ireneRojasPhoto {
     width: 100px;
     border-radius: 50%;
+    float: left;
+    margin: 2px;
+    padding-top: 4px;
 }
 
 #aboutText {
@@ -188,7 +192,7 @@ a:link {
 .projectsIntro {
     display: grid;
     grid-area: projectsIntro;
-    grid-column: 2/12;
+    /* grid-column: 2/12; */
     grid-row: 3/4;
     background-color: white;
     color: black;
@@ -201,7 +205,7 @@ a:link {
 
 /* start projects ---------------*/
 .projects {
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1; */
     grid-row: 4/5;
     align-self: center;
     padding-top: 15px;
