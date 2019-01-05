@@ -129,6 +129,10 @@ a:link {
     grid-row-gap: 0px;
     height: 100%;
     z-index: 1000;
+    grid-template-areas: 
+        "aboutContainer"
+        "projectsIntro"
+        "projectsContainer";
 }
 
 /* start about ------------------*/
@@ -154,6 +158,7 @@ a:link {
     float: left;
     margin: 2px;
     padding-top: 4px;
+    opacity: 1;
 }
 
 #aboutText {
@@ -192,7 +197,7 @@ a:link {
 .projectsIntro {
     display: grid;
     grid-area: projectsIntro;
-    /* grid-column: 2/12; */
+    grid-column: 2/3;
     grid-row: 3/4;
     background-color: white;
     color: black;
@@ -203,23 +208,21 @@ a:link {
 }
 
 
-/* start projects ---------------*/
-.projects {
-    /* grid-column: 1 / -1; */
-    grid-row: 4/5;
-    align-self: center;
-    padding-top: 15px;
-    grid-area: projects;
-}
-
+/* start projectsContainer */
 .projectsContainer {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: center;
     display: grid;
-    grid-area: projectsContainer;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    place-items: center;
-    grid-row-gap: 25px;
-    text-align: center;
+    /* grid-area: projectsContainer; */
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: repeat(8, auto); */
+    /* place-items: center; */
+    grid-row-gap: 15px;
+    /* text-align: center; */
+    /* align-self: center; */
+    padding-top: 15px;
 }
 
 img {
@@ -233,6 +236,7 @@ img {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     /* border-top: 0.4px solid black; */
+    text-align: center;
 }
 
 .card {
@@ -246,70 +250,110 @@ img {
 }
 
 /* start project samples */
-
-.gameOn {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  grid-area: gameOn;
+.ezcycle {
+    grid-column: 1/-1;
+    grid-row: 1/2;
 }
 
 .numberGuess {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  grid-area: numberGuess;
-}
-
-.grids {
-    grid-column: 2/3;
+    grid-column: 1/-1;
     grid-row: 3/4;
-    grid-area: grids;
 }
 
-.ezcycle {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    grid-area: ezcycle;
-}
-
-.nytreact {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    grid-area: nytreact;
-}
-
-.futurama {
-    grid-column: 1/2;
+.gameOn {
+    grid-column: 1/-1;
     grid-row: 5/6;
-    grid-area: futurama;
-}
-
-.healthyHeads {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    grid-area: healthyHeads;
-}
-
-.brooklyn {
-    grid-column: 3/4;
-    grid-row: 5/6;
-    grid-area: brooklyn;
-}
-
-.eveningGenerator {
-    grid-column: 1/2;
-    grid-row: 7/8;
-    grid-area: eveningGenerator;
 }
 
 .pixarReact {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    grid-area: pixarReact;
+    grid-column: 1/-1;
+    grid-row: 7/8;
 }
 
+.grids {
+    grid-column: 1/-1;
+    grid-row: 9/10;
+}
+
+.nytreact {
+    grid-column: 1/-1;
+    grid-row: 11/12;
+}
+
+.futurama {
+    grid-column: 1/-1;
+    grid-row: 13/14;
+}
+
+.healthyHeads {
+    grid-column: 1/-1;
+    grid-row: 15/16;
+}
+
+.brooklyn {
+    grid-column: 1/-1;
+    grid-row: 17/18;
+}
+
+.eveningGenerator {
+    grid-column: 1/-1;
+    grid-row: 19/20;
+}
+
+@media (min-width: 700px) {
+.gameOn {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  
+  .numberGuess {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .grids {
+      grid-column: 2/3;
+      grid-row: 3/4;
+  }
+  
+  .ezcycle {
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+  
+  .nytreact {
+      grid-column: 3/4;
+      grid-row: 3/4;
+  }
+  
+  .futurama {
+      grid-column: 1/2;
+      grid-row: 5/6;
+  }
+  
+  .healthyHeads {
+      grid-column: 2/3;
+      grid-row: 5/6;
+  }
+  
+  .brooklyn {
+      grid-column: 3/4;
+      grid-row: 5/6;
+  }
+  
+  .eveningGenerator {
+      grid-column: 1/2;
+      grid-row: 7/8;
+  }
+  
+  .pixarReact {
+      grid-column: 1/2;
+      grid-row: 3/4;
+  }
+}
 /* end project samples */
 
-/* end projects ------------------- */
+/* end projectsContainer ------------------- */
 
 
 /* flip card functionality */
