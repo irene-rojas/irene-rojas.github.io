@@ -310,49 +310,54 @@ img {
     grid-row: 1/2;
 }
 
-.numberGuess {
+.itunes {
     grid-column: 1/-1;
     grid-row: 3/4;
 }
 
-.gameOn {
+.numberGuess {
     grid-column: 1/-1;
     grid-row: 5/6;
 }
 
-.pixarReact {
+.gameOn {
     grid-column: 1/-1;
     grid-row: 7/8;
 }
 
-.grids {
+.pixarReact {
     grid-column: 1/-1;
     grid-row: 9/10;
 }
 
-.nytreact {
+.grids {
     grid-column: 1/-1;
     grid-row: 11/12;
 }
 
-.futurama {
+.nytreact {
     grid-column: 1/-1;
     grid-row: 13/14;
 }
 
-.healthyHeads {
+.futurama {
     grid-column: 1/-1;
     grid-row: 15/16;
 }
 
-.brooklyn {
+.healthyHeads {
     grid-column: 1/-1;
     grid-row: 17/18;
 }
 
-.eveningGenerator {
+.brooklyn {
     grid-column: 1/-1;
     grid-row: 19/20;
+}
+
+.eveningGenerator {
+    grid-column: 1/-1;
+    grid-row: 21/22;
 }
 
 @media (min-width: 700px) {
@@ -424,54 +429,59 @@ img {
     
     /* start project samples */
     
-    .gameOn {
-      grid-column: 3/4;
-      grid-row: 1/2;
-    }
-    
-    .numberGuess {
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-    
-    .grids {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    
     .ezcycle {
         grid-column: 1/2;
         grid-row: 1/2;
     }
+
+    .itunes {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
     
-    .nytreact {
+    .numberGuess {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    
+    .gameOn {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+    
+    .pixarReact {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .grids {
         grid-column: 3/4;
         grid-row: 3/4;
     }
-    
-    .futurama {
+
+    .nytreact {
         grid-column: 1/2;
         grid-row: 5/6;
     }
-    
-    .healthyHeads {
+
+    .futurama {
         grid-column: 2/3;
         grid-row: 5/6;
     }
-    
-    .brooklyn {
+
+    .healthyHeads {
         grid-column: 3/4;
         grid-row: 5/6;
     }
-    
-    .eveningGenerator {
+
+    .brooklyn {
         grid-column: 1/2;
         grid-row: 7/8;
     }
-    
-    .pixarReact {
-        grid-column: 1/2;
-        grid-row: 3/4;
+
+    .eveningGenerator {
+        grid-column: 2/3;
+        grid-row: 7/8;
     }
 }
 /* end project samples */
