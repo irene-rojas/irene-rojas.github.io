@@ -305,6 +305,8 @@ img {
 }
 
 /* start project samples */
+
+/* for mobile */
 .ezcycle {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -360,6 +362,7 @@ img {
     grid-row: 21/22;
 }
 
+/* for desktop 1 */
 @media (min-width: 700px) {
 .gameOn {
     grid-column: 3/4;
@@ -412,6 +415,7 @@ img {
   }
 }
 
+/* for desktop 2 */
 @media (min-width: 700px) {
 
     .projectsContainer {
@@ -443,11 +447,16 @@ img {
       grid-column: 3/4;
       grid-row: 1/2;
     }
+
+    .matchFlag {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     
     .gameOn {
         grid-column: 1/2;
-        grid-row: 3/4;
-      }
+        grid-row: 5/6;
+    }
     
     .pixarReact {
         grid-column: 2/3;
@@ -455,32 +464,32 @@ img {
     }
 
     .grids {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .nytreact {
         grid-column: 3/4;
         grid-row: 3/4;
     }
 
-    .nytreact {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
     .futurama {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-
-    .healthyHeads {
         grid-column: 3/4;
         grid-row: 5/6;
     }
 
-    .brooklyn {
+    .healthyHeads {
         grid-column: 1/2;
         grid-row: 7/8;
     }
 
-    .eveningGenerator {
+    .brooklyn {
         grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .eveningGenerator {
+        grid-column: 3/4;
         grid-row: 7/8;
     }
 }
