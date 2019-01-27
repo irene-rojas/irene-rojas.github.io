@@ -333,10 +333,10 @@ img {
     grid-row: 9/10;
 }
 
-.nytreact {
+/* .nytreact {
     grid-column: 1/-1;
     grid-row: 11/12;
-}
+} */
 
 .gameOn {
     grid-column: 1/-1;
@@ -358,10 +358,10 @@ img {
     grid-row: 19/20;
 }
 
-.brooklyn {
+/* .brooklyn {
     grid-column: 1/-1;
     grid-row: 21/22;
-}
+} */
 
 .eveningGenerator {
     grid-column: 1/-1;
@@ -384,9 +384,7 @@ img {
         align-self: center;
     }
     
-    
-    /* start project samples */
-    
+    /* start project samples */ 
     .ezcycle {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -408,8 +406,8 @@ img {
     }
     
     .gameOn {
-        grid-column: 1/2;
-        grid-row: 5/6;
+        grid-column: 3/4;
+        grid-row: 3/4;
     }
     
     .pixarReact {
@@ -418,17 +416,17 @@ img {
     }
 
     .grids {
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 5/6;
     }
 
-    .nytreact {
+    /* .nytreact {
         grid-column: 3/4;
         grid-row: 3/4;
-    }
+    } */
 
     .futurama {
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 5/6;
     }
 
@@ -437,14 +435,14 @@ img {
         grid-row: 7/8;
     }
 
-    .brooklyn {
+    /* .brooklyn {
         grid-column: 2/3;
         grid-row: 7/8;
-    }
+    } */
 
     .eveningGenerator {
         grid-column: 3/4;
-        grid-row: 7/8;
+        grid-row: 5/6;
     }
 }
 /* end project samples */
