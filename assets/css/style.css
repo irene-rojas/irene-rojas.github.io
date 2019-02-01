@@ -448,7 +448,7 @@ img {
 
 /* end projectsContainer ------------------- */
 
-
+/* webkit = Safari compatibility */
 /* flip card functionality */
 .flip-card {
     background-color: transparent;
@@ -464,12 +464,18 @@ img {
     height: 100%;
     text-align: center;
     transition: transform 1.2s;
+    -webkit-transition: transform 1.2s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   
   /* Do a horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
   
   /* Position the front and back side */
@@ -493,9 +499,11 @@ img {
     background-color: white;
     opacity: 0.9;
     color: black;
-    transform: rotateY(180deg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 0.33px solid black;
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
 
