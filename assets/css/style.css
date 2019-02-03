@@ -23,8 +23,22 @@ a:link {
     text-decoration: none;
 }
 
+.navZoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.navZoom:hover {
+    transform: scale(1.05); 
+}
+
+.redLink:hover {
+    color: red !important;
+}
+
 
 /* start header --------------------- */
+/* mobile */
 .header {
     display: grid;
     grid-area: header;
@@ -58,15 +72,6 @@ a:link {
     grid-row: 1/2;
     font-size: 12pt;
     grid-area: ireneTitle;
-}
-
-.navZoom {
-    transition: transform .2s;
-    margin: 0 auto;
-}
-
-.navZoom:hover {
-    transform: scale(1.05); 
 }
 
 .navHome {
@@ -107,11 +112,8 @@ a:link {
     margin-bottom: 5px;
 }
 
-.redLink:hover {
-    color: red !important;
-}
-
-@media (min-width: 700px) {
+/* desktop */
+@media (min-width: 769px) {
 .header {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px;
@@ -151,10 +153,12 @@ a:link {
     text-align: right;
 }
 }
+/* end desktop */
 /* end header ------------------ */
 
 
 /* start masterContainer -------- */
+/* mobile */
 .masterContainer {
     display: grid;
     grid-area: masterContainer;
@@ -170,7 +174,9 @@ a:link {
         "projectsIntro"
         "projectsContainer";
 }
-@media (min-width: 700px) {
+
+/* desktop */
+@media (min-width: 769px) {
     .masterContainer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 15rem 1fr 75px 1fr;
@@ -179,6 +185,7 @@ a:link {
 
 
 /* start about ------------------*/
+/* mobile */
 .aboutContainer {
     /* display: grid; */
     grid-area: aboutContainer;
@@ -208,7 +215,8 @@ a:link {
     margin: 0px;
 }
 
-@media (min-width: 700px) {
+/* desktop */
+@media (min-width: 769px) {
     .aboutContainer {
         display: grid;
         grid-column: 2/12;
@@ -247,7 +255,7 @@ a:link {
 
 /* end about --------------------*/
 
-
+/* mobile */
 .projectsIntro {
     display: grid;
     grid-area: projectsIntro;
@@ -258,11 +266,10 @@ a:link {
     place-items: center;
     border-radius: 5px;
     height: 50px;
-    /* opacity: 0.9; */
-    /* margin-bottom: 25px; */
 }
 
-@media (min-width: 700px) {
+/* desktop */
+@media (min-width: 769px) {
     .projectsIntro {
         grid-column: 2/12;
         grid-row: 3/4;
@@ -277,7 +284,7 @@ a:link {
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-row-gap: 15px;
+    grid-row-gap: 30px;
     padding-top: 15px;
 }
 
@@ -357,26 +364,27 @@ img {
     grid-row: 19/20;
 }
 
+.eveningGenerator {
+    grid-column: 1/-1;
+    grid-row: 21/22;
+}
+
 /* .brooklyn {
     grid-column: 1/-1;
     grid-row: 21/22;
 } */
-
-.eveningGenerator {
-    grid-column: 1/-1;
-    grid-row: 23/24;
-}
+/* end mobile */
 
 
 /* desktop */
-@media (min-width: 700px) {
+@media (min-width: 769px) {
 
     .projectsContainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, auto);
         place-items: center;
-        grid-row-gap: 25px;
+        grid-row-gap: 30px;
         text-align: center;
         grid-column: 1 / -1;
         grid-row: 4/5;
@@ -429,6 +437,11 @@ img {
         grid-row: 5/6;
     }
 
+    .eveningGenerator {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
     /* .healthyHeads {
         grid-column: 1/2;
         grid-row: 7/8;
@@ -439,14 +452,10 @@ img {
         grid-row: 7/8;
     } */
 
-    .eveningGenerator {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
 }
 /* end desktop project samples */
-
 /* end projectsContainer ------------------- */
+
 
 /* webkit = Safari compatibility */
 /* flip card functionality */
@@ -495,9 +504,7 @@ img {
   
   /* Style the back side */
   .flip-card-back {
-    /* background-color: #2196f3; */
     background-color: white;
-    opacity: 0.9;
     color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
