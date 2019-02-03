@@ -258,8 +258,6 @@ a:link {
     place-items: center;
     border-radius: 5px;
     height: 50px;
-    /* opacity: 0.9; */
-    /* margin-bottom: 25px; */
 }
 
 @media (min-width: 700px) {
@@ -277,7 +275,7 @@ a:link {
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-row-gap: 15px;
+    grid-row-gap: 30px;
     padding-top: 15px;
 }
 
@@ -357,15 +355,15 @@ img {
     grid-row: 19/20;
 }
 
+.eveningGenerator {
+    grid-column: 1/-1;
+    grid-row: 21/22;
+}
+
 /* .brooklyn {
     grid-column: 1/-1;
     grid-row: 21/22;
 } */
-
-.eveningGenerator {
-    grid-column: 1/-1;
-    grid-row: 23/24;
-}
 
 
 /* desktop */
