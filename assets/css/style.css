@@ -376,7 +376,7 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, auto);
         place-items: center;
-        grid-row-gap: 25px;
+        grid-row-gap: 30px;
         text-align: center;
         grid-column: 1 / -1;
         grid-row: 4/5;
@@ -497,7 +497,6 @@ img {
   .flip-card-back {
     /* background-color: #2196f3; */
     background-color: white;
-    opacity: 0.9;
     color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
