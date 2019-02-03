@@ -25,6 +25,20 @@ a:link {
 
 
 /* start header --------------------- */
+.navZoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.navZoom:hover {
+    transform: scale(1.05); 
+}
+
+.redLink:hover {
+    color: red !important;
+}
+
+/* mobile */
 .header {
     display: grid;
     grid-area: header;
@@ -58,15 +72,6 @@ a:link {
     grid-row: 1/2;
     font-size: 12pt;
     grid-area: ireneTitle;
-}
-
-.navZoom {
-    transition: transform .2s;
-    margin: 0 auto;
-}
-
-.navZoom:hover {
-    transform: scale(1.05); 
 }
 
 .navHome {
@@ -107,9 +112,6 @@ a:link {
     margin-bottom: 5px;
 }
 
-.redLink:hover {
-    color: red !important;
-}
 
 @media (min-width: 769px) {
 .header {
@@ -155,6 +157,7 @@ a:link {
 
 
 /* start masterContainer -------- */
+/* mobile */
 .masterContainer {
     display: grid;
     grid-area: masterContainer;
@@ -170,6 +173,7 @@ a:link {
         "projectsIntro"
         "projectsContainer";
 }
+/* desktop */
 @media (min-width: 769px) {
     .masterContainer {
         grid-template-columns: repeat(12, 1fr);
@@ -179,6 +183,7 @@ a:link {
 
 
 /* start about ------------------*/
+/* mobile */
 .aboutContainer {
     /* display: grid; */
     grid-area: aboutContainer;
@@ -208,6 +213,7 @@ a:link {
     margin: 0px;
 }
 
+/* desktop */
 @media (min-width: 769px) {
     .aboutContainer {
         display: grid;
@@ -427,6 +433,11 @@ img {
         grid-row: 5/6;
     }
 
+    .eveningGenerator {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
     /* .healthyHeads {
         grid-column: 1/2;
         grid-row: 7/8;
@@ -437,10 +448,6 @@ img {
         grid-row: 7/8;
     } */
 
-    .eveningGenerator {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
 }
 /* end desktop project samples */
 
