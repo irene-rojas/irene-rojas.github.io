@@ -344,7 +344,7 @@ img {
     grid-row: 11/12;
 }
 
-.gameOn {
+.brooklyn {
     grid-column: 1/-1;
     grid-row: 13/14;
 }
@@ -359,20 +359,22 @@ img {
     grid-row: 17/18;
 }
 
-.healthyHeads {
+.gameOn {
     grid-column: 1/-1;
     grid-row: 19/20;
 }
+
+/* .healthyHeads {
+    grid-column: 1/-1;
+    grid-row: 19/20;
+} */
 
 /* .eveningGenerator {
     grid-column: 1/-1;
     grid-row: 21/22;
 } */
 
-/* .brooklyn {
-    grid-column: 1/-1;
-    grid-row: 21/22;
-} */
+
 /* end mobile */
 
 
@@ -397,39 +399,39 @@ img {
         grid-row: 1/2;
     }
 
-    .itunes {
-        grid-column: 3/4;
-        grid-row: 3/4;
+    .nytreact {
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
-    
+
     .numberGuess {
-      grid-column: 3/4;
-      grid-row: 1/2;
+        grid-column: 3/4;
+        grid-row: 1/2;
     }
 
     .matchFlag {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    
-    .gameOn {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    
+
     .pixarReact {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
+    .itunes {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .brooklyn {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
     .grids {
         grid-column: 2/3;
         grid-row: 5/6;
-    }
-
-    .nytreact {
-        grid-column: 2/3;
-        grid-row: 1/2;
     }
 
     .futurama {
@@ -437,20 +439,22 @@ img {
         grid-row: 5/6;
     }
 
-    .eveningGenerator {
+    .gameOn {
         grid-column: 1/2;
         grid-row: 7/8;
     }
+
+    /* .eveningGenerator {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    } */
 
     /* .healthyHeads {
         grid-column: 1/2;
         grid-row: 7/8;
     } */
 
-    /* .brooklyn {
-        grid-column: 2/3;
-        grid-row: 7/8;
-    } */
+
 
 }
 /* end desktop project samples */
