@@ -255,6 +255,7 @@ a:link {
 
 /* end about --------------------*/
 
+/* start projectsIntro --------- */
 /* mobile */
 .projectsIntro {
     display: grid;
@@ -275,9 +276,10 @@ a:link {
         grid-row: 3/4;
     }
 }
+/* end projectsIntro ----------- */
 
 
-/* start projectsContainer */
+/* start projectsContainer ------*/
 .projectsContainer {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -319,7 +321,7 @@ img {
     grid-row: 1/2;
 }
 
-.nytreact {
+.matchFlag {
     grid-column: 1/-1;
     grid-row: 3/4;
 }
@@ -329,7 +331,7 @@ img {
     grid-row: 5/6;
 }
 
-.matchFlag {
+.nytreact {
     grid-column: 1/-1;
     grid-row: 7/8;
 }
@@ -354,14 +356,19 @@ img {
     grid-row: 15/16;
 }
 
-.grids {
+.wordGuess {
     grid-column: 1/-1;
     grid-row: 17/18;
 }
 
-.gameOn {
+.grids {
     grid-column: 1/-1;
     grid-row: 19/20;
+}
+
+.gameOn {
+    grid-column: 1/-1;
+    grid-row: 21/22;
 }
 
 /* .healthyHeads {
@@ -399,7 +406,7 @@ img {
         grid-row: 1/2;
     }
 
-    .nytreact {
+    .matchFlag {
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -409,7 +416,7 @@ img {
         grid-row: 1/2;
     }
 
-    .matchFlag {
+    .nytreact {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -434,13 +441,18 @@ img {
         grid-row: 5/6;
     }
 
-    .grids {
+    .wordGuess {
         grid-column: 3/4;
         grid-row: 5/6;
     }
 
     .gameOn {
         grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .grids {
+        grid-column: 2/3;
         grid-row: 7/8;
     }
 
