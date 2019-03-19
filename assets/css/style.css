@@ -255,6 +255,7 @@ a:link {
 
 /* end about --------------------*/
 
+/* start projectsIntro --------- */
 /* mobile */
 .projectsIntro {
     display: grid;
@@ -275,9 +276,10 @@ a:link {
         grid-row: 3/4;
     }
 }
+/* end projectsIntro ----------- */
 
 
-/* start projectsContainer */
+/* start projectsContainer ------*/
 .projectsContainer {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -399,7 +401,7 @@ img {
         grid-row: 1/2;
     }
 
-    .nytreact {
+    .matchFlag {
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -409,7 +411,7 @@ img {
         grid-row: 1/2;
     }
 
-    .matchFlag {
+    .nytreact {
         grid-column: 1/2;
         grid-row: 3/4;
     }
