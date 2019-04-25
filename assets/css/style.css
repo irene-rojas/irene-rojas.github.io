@@ -4,7 +4,7 @@ body {
 }
 
 .parallax {
-    height: 100%;
+    height: 100vh;
     background-image: url("../../assets/images/cherry_sunrise3.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -44,20 +44,32 @@ p {
 
     .header {
         display: grid;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(4 , auto);
         grid-template-columns: 1fr;
         background-color: white;
         text-align: center;
         padding: 10px;
     }
 
+    .ireneNameTitle {
+        /* in header */
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        /* in ireneNameTitle */
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: auto;
+    }
+
     #ireneRojas {
+        /* in ireneNameTitle */
         grid-row: 1/2;
         grid-column: 1/-1;
         font-size: 26pt;
     }
 
     #ireneTitle {
+        /* in ireneNameTitle */
         grid-row: 2/3;
         grid-column: 1/-1;
         font-size: 12pt;
@@ -66,21 +78,22 @@ p {
     }
 
     .navProjects {
-        grid-row: 3/4;
+        /* in header */
+        grid-row: 2/3;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 10px;
     }
 
     .navGithub {
-        grid-row: 4/5;
+        grid-row: 3/4;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 5px;
     }
 
     .navSWM {
-        grid-row: 5/6;
+        grid-row: 4/5;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 5px;
@@ -243,18 +256,22 @@ p {
         display: grid;
         grid-template-rows: 80px;
         grid-template-columns: repeat(12, 1fr);
-        align-self: center;
-        background-color: blue;
+        background-color: white;
     }
 
     #ireneRojas {
-        grid-column: 2/ span 2;
+        /* in header */
         grid-row: 1/2;
+        grid-column: 2/span 2;
+        /* inside ireneRojas */
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: auto;
     }
 
     #ireneTitle {
-        grid-column: 4/span 2;
-        grid-row: 1/2;
+        grid-row: 2/3;
+        grid-column: 2/span 2;
     }
 
     .navProjects {
@@ -273,10 +290,12 @@ p {
         text-align: right;
     }
 
+
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 80px 200px 150px 75px 1fr;
+        height: 100vh;
     }
 
     .aboutContainer {
