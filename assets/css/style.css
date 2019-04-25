@@ -1,15 +1,16 @@
 body {
     margin: 0 auto;
     font-family: "Avenir Next";
+    height: 100vh;
 }
 
 .parallax {
     height: 100%;
-    background-image: url("../../assets/images/cherry_sunrise3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("../../assets/images/cherry_sunrise3.jpg");
 }
 
 a {
@@ -40,7 +41,7 @@ p {
 }
 
 img {
-    width: 300px;
+    width: 350px;
 }
 
 /* mobile */
@@ -263,6 +264,7 @@ img {
         grid-template-columns: repeat(12, 1fr);
         background-color: white;
         border-bottom: 1px solid gray;
+        top: 0;
     }
 
     .ireneNameTitle {
@@ -274,7 +276,6 @@ img {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: auto;
         align-self: center;
-
     }
 
     #ireneRojas {
@@ -314,7 +315,7 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 35rem auto auto 1fr;
+        grid-template-rows: 30rem auto auto 1fr;
         height: 100vh;
     }
 
