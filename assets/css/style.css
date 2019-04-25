@@ -49,6 +49,7 @@ p {
         background-color: white;
         text-align: center;
         padding: 10px;
+        border-bottom: 1px solid gray;
     }
 
     .ireneNameTitle {
@@ -257,6 +258,7 @@ p {
         grid-template-rows: 80px;
         grid-template-columns: repeat(12, 1fr);
         background-color: white;
+        border-bottom: 1px solid gray;
     }
 
     .ireneNameTitle {
