@@ -4,15 +4,6 @@ body {
     height: 100vh;
 }
 
-.parallax {
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../assets/images/cherry_sunrise3.jpg");
-}
-
 a {
     color: black;
 }
@@ -47,6 +38,17 @@ img {
 /* mobile */
 @media (max-width: 768px) {
 
+    .parallax {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: url("../../assets/images/cherry_sunrise3.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .header {
         display: grid;
         grid-template-rows: repeat(4 , auto);
@@ -55,6 +57,9 @@ img {
         text-align: center;
         padding: 10px;
         border-bottom: 1px solid gray;
+        top: 0;
+        position: sticky;
+        z-index: 100;
     }
 
     .ireneNameTitle {
@@ -258,6 +263,17 @@ img {
 /* desktop */
 @media (min-width: 769px) {
 
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: url("../../assets/images/cherry_sunrise3.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .header {
         display: grid;
         grid-template-rows: 80px;
@@ -265,6 +281,8 @@ img {
         background-color: white;
         border-bottom: 1px solid gray;
         top: 0;
+        position: sticky;
+        z-index: 100;
     }
 
     .ireneNameTitle {
@@ -316,7 +334,7 @@ img {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 30rem auto auto 1fr;
-        height: 100vh;
+        height: 100%;
     }
 
 
