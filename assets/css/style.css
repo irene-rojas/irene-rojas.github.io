@@ -18,6 +18,7 @@ a {
 
 a:link {
     text-decoration: none;
+    padding: 0px;
 }
 
 .navZoom {
@@ -31,36 +32,23 @@ a:link {
 
 .redLink:hover {
     color: red !important;
+    padding: 0px;
 }
 
+p {
+    margin: 0px;
+}
 
-/* start header --------------------- */
 /* mobile */
 @media (max-width: 768px) {
-    .masterContainer {
-        display: grid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: auto auto 75px 1fr;
-        height: 100%;
-        text-align: center;
-        /* align-items: center; */
-        /* align-content: center; */
-        /* grid-row-gap: 0px; */
-    }
 
     .header {
-        /* in master */
-        grid-row: 1/2;
-        grid-column: 1/-1;
-        /* in header */
         display: grid;
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 1fr;
         background-color: white;
-        font-size: 18pt;
         text-align: center;
         padding: 10px;
-        border-bottom: 1px solid black;
     }
 
     #ireneRojas {
@@ -73,65 +61,170 @@ a:link {
         grid-row: 2/3;
         grid-column: 1/-1;
         font-size: 12pt;
-        padding-top: 5px;
+        padding: 5px;
+        border-bottom: 1px solid gray;
     }
 
     .navProjects {
         grid-row: 3/4;
         grid-column: 1/-1;
-        font-size: 14pt;
-        margin-bottom: 5px;
-        padding-top: 5px;
+        font-size: 12pt;
+        padding-top: 10px;
     }
 
     .navGithub {
         grid-row: 4/5;
         grid-column: 1/-1;
-        font-size: 14pt;
+        font-size: 12pt;
         padding-top: 5px;
     }
 
     .navSWM {
         grid-row: 5/6;
         grid-column: 1/-1;
-        font-size: 14pt;
+        font-size: 12pt;
         text-align: left;
         margin-bottom: 5px;
         padding-top: 5px;
     }
 
+    .masterContainer {
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-rows: repeat(2, auto) 1fr;
+        height: 100%;
+        text-align: center;
+    }
+
     .aboutContainer {
         /* in master */
-        grid-row: 2/3;
-        grid-column: 1/-1;
-        /* in about */
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        background-color: blue;
-        color: black;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background-color: white;
         padding: 10px;
         border-radius: 5px;
-        margin-bottom: 50px;
+        margin-top: 11rem;
     }
     
     #ireneRojasPhoto {
-        grid-row: 1/2;
-        grid-column: 1/2;
         width: 100px;
         border-radius: 50%;
         float: left;
         margin: 2px;
-        padding-top: 4px;
     }
     
     #aboutText {
-        grid-row: 1/-1;
-        grid-column: 2/3;
-        padding: 10px;
-        margin: 0px;
+        padding: 10px 0px 15px 0px;
     }
 
+    .projectsIntro {
+        /* in master */
+        grid-row: 2/3;
+        grid-column: 2/3;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 150px;
+    }
+
+    .projectsContainer {
+        /* in master */
+        grid-row: 3/-1;
+        grid-column: 2/3;
+        /* in projects */
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-row-gap: 30px;
+        padding-top: 15px;
+    }
+    
+    img {
+        width: 350px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .imgCaption {
+        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+    }
+    
+    .cardCaption {
+        padding: 5px 10px 5px 10px;
+    }
+    
+
+    .matchFlag {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    
+    .numberGuess {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+    
+    .metro {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+    }
+    
+    .futurama {
+        grid-column: 1/-1;
+        grid-row: 7/8;
+    }
+    
+    .pixarReact {
+        grid-column: 1/-1;
+        grid-row: 9/10;
+    }
+    
+    .weather {
+        grid-column: 1/-1;
+        grid-row: 11/12;
+    }
+    
+    .nytreact {
+        grid-column: 1/-1;
+        grid-row: 13/14;
+    }
+    
+    .itunes {
+        grid-column: 1/-1;
+        grid-row: 15/16;
+    }
+    
+    .brooklyn {
+        grid-column: 1/-1;
+        grid-row: 17/18;
+    }
+    
+    .wordGuess {
+        grid-column: 1/-1;
+        grid-row: 19/20;
+    }
+    
+    .ezcycle {
+        grid-column: 1/-1;
+        grid-row: 21/22;
+    }
+    
+    .grids {
+        grid-column: 1/-1;
+        grid-row: 23/24;
+    }
+    
 }
 /* end mobile */
 
@@ -155,7 +248,7 @@ a:link {
 
 
 /* desktop */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
 
     .masterContainer {
         display: grid;
@@ -164,10 +257,8 @@ a:link {
     }
 
     .header {
-        /* in master */
         grid-row: 1/2;
         grid-column: 1/-1;
-        /* in header */
         display: grid;
         grid-template-rows: 80px;
         grid-template-columns: repeat(12, 1fr);
@@ -201,13 +292,9 @@ a:link {
         text-align: right;
     }
 
-
-
     .aboutContainer {
-        /* in master */
         grid-column: 2/12;
         grid-row: 2/3;
-        /* display: grid; */
 
     }
     
@@ -233,7 +320,6 @@ a:link {
         align-self: center;
     }
     
-    /* start project samples */ 
 
     .matchFlag {
         grid-column: 1/2;
@@ -295,153 +381,13 @@ a:link {
         grid-row: 7/8;
     }
 
-}
+} */
 /* end desktop */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* start projectsIntro --------- */
-/* mobile */
-.projectsIntro {
-    display: grid;
-    grid-area: projectsIntro;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: white;
-    color: black;
-    place-items: center;
-    border-radius: 5px;
-    height: 50px;
-}
-
-/* end projectsIntro ----------- */
-
-
-/* start projectsContainer ------*/
-.projectsContainer {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-row-gap: 30px;
-    padding-top: 15px;
-}
-
-img {
-    width: 350px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.imgCaption {
-    background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align: center;
-}
-
-.card {
-    background-color: white;
-    border-radius: 5px;
-    color: black;
-}
-
-.cardCaption {
-    padding: 5px 10px 5px 10px;
-}
-
-/* start project samples */
-
-/* mobile */
-.matchFlag {
-    grid-column: 1/-1;
-    grid-row: 1/2;
-}
-
-.numberGuess {
-    grid-column: 1/-1;
-    grid-row: 3/4;
-}
-
-.metro {
-    grid-column: 1/-1;
-    grid-row: 5/6;
-}
-
-.futurama {
-    grid-column: 1/-1;
-    grid-row: 7/8;
-}
-
-.pixarReact {
-    grid-column: 1/-1;
-    grid-row: 9/10;
-}
-
-.weather {
-    grid-column: 1/-1;
-    grid-row: 11/12;
-}
-
-.nytreact {
-    grid-column: 1/-1;
-    grid-row: 13/14;
-}
-
-.itunes {
-    grid-column: 1/-1;
-    grid-row: 15/16;
-}
-
-.brooklyn {
-    grid-column: 1/-1;
-    grid-row: 17/18;
-}
-
-.wordGuess {
-    grid-column: 1/-1;
-    grid-row: 19/20;
-}
-
-.ezcycle {
-    grid-column: 1/-1;
-    grid-row: 21/22;
-}
-
-.grids {
-    grid-column: 1/-1;
-    grid-row: 23/24;
-}
-
-/* end mobile */
-
-
-/* end desktop project samples */
-/* end projectsContainer ------------------- */
 
 
 /* webkit = Safari compatibility */
