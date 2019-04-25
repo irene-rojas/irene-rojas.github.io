@@ -33,7 +33,27 @@ p {
 
 img {
     width: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
+
+.imgCaption {
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.cardCaption {
+    padding: 5px 10px 5px 10px;
+}
+
 
 /* mobile */
 @media (max-width: 768px) {
@@ -162,31 +182,7 @@ img {
         justify-self: center;
         grid-row-gap: 30px;
         padding-top: 15px;
-    }
-    
-    img {
-        width: 350px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-    
-    .imgCaption {
-        background-color: white;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        text-align: center;
-    }
-    
-    .card {
-        background-color: white;
-        border-radius: 5px;
-        color: black;
-    }
-    
-    .cardCaption {
-        padding: 5px 10px 5px 10px;
-    }
-    
+    }    
 
     .matchFlag {
         grid-column: 1/-1;
@@ -333,7 +329,7 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 30rem auto auto 1fr;
+        grid-template-rows: 35rem auto auto 1fr;
         height: 100%;
     }
 
@@ -384,6 +380,7 @@ img {
         grid-row-gap: 30px;
         text-align: center;
         align-self: center;
+        margin-top: 50px;
     }
     
 
