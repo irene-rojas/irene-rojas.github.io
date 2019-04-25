@@ -4,10 +4,7 @@ body {
 }
 
 .parallax {
-    perspective: 1px;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
     background-image: url("../../assets/images/cherry_sunrise3.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -39,221 +36,292 @@ a:link {
 
 /* start header --------------------- */
 /* mobile */
-.header {
-    display: grid;
-    grid-area: header;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 30px 30px 30px 30px;
-    place-items: center;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-    font-size: 18pt;
-    grid-template-areas: 
-        "ireneRojas"    "ireneTitle"
-        "navHome"
-        "navProjects"
-        "navGithub"
-        "navSWM";
-}
-
-#ireneRojas {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    place-items: center;
-    font-size: 26pt;
-    grid-area: ireneRojas;
-    text-align: left;
-}
-
-#ireneTitle {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    font-size: 12pt;
-    grid-area: ireneTitle;
-}
-
-.navHome {
-    grid-column: 1/ span 2;
-    grid-row: 2/3;
-    place-items: center;
-    font-size: 14pt;
-    grid-area: navHome;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.navProjects {
-    grid-column: 1/ span 2;
-    grid-row: 3/4;
-    place-items: center;
-    font-size: 14pt;
-    grid-area: navProjects;
-    margin-bottom: 5px;
-}
-
-.navGithub {
-    grid-column: 1/ span 2;
-    /* grid-row: 1/2; */
-    place-items: center;
-    font-size: 14pt;
-    grid-area: navGithub;
-    margin-bottom: 5px;
-}
-
-.navSWM {
-    grid-column: 1/ span 2;
-    /* grid-row: 1 / 2; */
-    justify-self: end;
-    font-size: 12pt;
-    text-align: left;
-    grid-area: navSWM;
-    margin-bottom: 5px;
-}
-
-/* desktop */
-@media (min-width: 769px) {
-.header {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px;
-    grid-column: 1 / -1;
-    align-self: center;
-    background-color: white;
-}
-
-#ireneRojas {
-    grid-column: 2/ span 2;
-    grid-row: 1/2;
-}
-
-#ireneTitle {
-    grid-column: 4/span 2;
-    grid-row: 1/2;
-}
-
-.navHome {
-    grid-column: 9/10;
-    grid-row: 1 / 2;
-}
-
-.navProjects {
-    grid-column: 10/11;
-    grid-row: 1 / 2;
-}
-
-.navGithub {
-    grid-column: 11/12;
-    grid-row: 1/2;
-}
-
-.navSWM {
-    grid-column: 12/-1;
-    grid-row: 1 / 2;
-    text-align: right;
-}
-}
-/* end desktop */
-/* end header ------------------ */
-
-
-/* start masterContainer -------- */
-/* mobile */
-.masterContainer {
-    display: grid;
-    grid-area: masterContainer;
-    grid-template-columns: 10px 1fr 10px;
-    grid-template-rows: 20rem auto 75px 1fr;
-    align-items: center;
-    align-content: center;
-    grid-row-gap: 0px;
-    height: 100%;
-    z-index: 1000;
-    grid-template-areas: 
-        "aboutContainer"
-        "projectsIntro"
-        "projectsContainer";
-}
-
-/* desktop */
-@media (min-width: 769px) {
+@media (max-width: 768px) {
     .masterContainer {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 15rem 1fr 75px 1fr;
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: auto auto 75px 1fr;
+        height: 100%;
+        text-align: center;
+        /* align-items: center; */
+        /* align-content: center; */
+        /* grid-row-gap: 0px; */
     }
+
+    .header {
+        /* in master */
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        /* in header */
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr;
+        background-color: white;
+        font-size: 18pt;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    #ireneRojas {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        font-size: 26pt;
+    }
+
+    #ireneTitle {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+
+    .navProjects {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        font-size: 14pt;
+        margin-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .navGithub {
+        grid-row: 4/5;
+        grid-column: 1/-1;
+        font-size: 14pt;
+        padding-top: 5px;
+    }
+
+    .navSWM {
+        grid-row: 5/6;
+        grid-column: 1/-1;
+        font-size: 14pt;
+        text-align: left;
+        margin-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .aboutContainer {
+        /* in master */
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        /* in about */
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        background-color: blue;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    
+    #ireneRojasPhoto {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100px;
+        border-radius: 50%;
+        float: left;
+        margin: 2px;
+        padding-top: 4px;
+    }
+    
+    #aboutText {
+        grid-row: 1/-1;
+        grid-column: 2/3;
+        padding: 10px;
+        margin: 0px;
+    }
+
 }
+/* end mobile */
 
 
-/* start about ------------------*/
-/* mobile */
-.aboutContainer {
-    /* display: grid; */
-    grid-area: aboutContainer;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    place-items: center;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border-radius: 5px;
-    z-index: 1000;
-    margin-bottom: 50px;
-}
 
-#ireneRojasPhoto {
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 2px;
-    padding-top: 4px;
-}
 
-#aboutText {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding: 10px;
-    margin: 0px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* desktop */
 @media (min-width: 769px) {
-    .aboutContainer {
+
+    .masterContainer {
         display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 80px 200px 150px 75px 1fr;
+    }
+
+    .header {
+        /* in master */
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        /* in header */
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: repeat(12, 1fr);
+        align-self: center;
+        background-color: white;
+    }
+
+    #ireneRojas {
+        grid-column: 2/ span 2;
+        grid-row: 1/2;
+    }
+
+    #ireneTitle {
+        grid-column: 4/span 2;
+        grid-row: 1/2;
+    }
+
+    .navProjects {
+        grid-column: 9/10;
+        grid-row: 1 / 2;
+    }
+
+    .navGithub {
+        grid-column: 10/11;
+        grid-row: 1 / 2;
+    }
+
+    .navSWM {
+        grid-column: 11/12;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+
+
+    .aboutContainer {
+        /* in master */
         grid-column: 2/12;
         grid-row: 2/3;
+        /* display: grid; */
+
     }
     
     #ireneRojasPhoto {
         width: 100px;
         border-radius: 50%;
     }
+
+    .projectsIntro {
+        grid-column: 2/12;
+        grid-row: 3/4;
+    }
+
+    .projectsContainer {
+        grid-column: 1 / -1;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+        place-items: center;
+        grid-row-gap: 30px;
+        text-align: center;
+        align-self: center;
+    }
     
-}
+    /* start project samples */ 
 
-/* ----------------------------------------------
- * Generated by Animista on 2018-10-17 9:49:18
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
- .slide-top {
-	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
- @keyframes slide-top {
-    0% {
-      transform: translateY(0);
+    .matchFlag {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-    100% {
-      transform: translateY(-100px);
-    }
-  }
 
-/* end about --------------------*/
+    .numberGuess {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .metro {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .futurama {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .pixarReact {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .weather {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .nytreact {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .itunes {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .brooklyn {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+
+    .wordGuess {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .ezcycle {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .grids {
+        grid-column: 3/4;
+        grid-row: 7/8;
+    }
+
+}
+/* end desktop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* start projectsIntro --------- */
 /* mobile */
@@ -269,13 +337,6 @@ a:link {
     height: 50px;
 }
 
-/* desktop */
-@media (min-width: 769px) {
-    .projectsIntro {
-        grid-column: 2/12;
-        grid-row: 3/4;
-    }
-}
 /* end projectsIntro ----------- */
 
 
@@ -379,84 +440,6 @@ img {
 /* end mobile */
 
 
-/* desktop */
-@media (min-width: 769px) {
-
-    .projectsContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, auto);
-        place-items: center;
-        grid-row-gap: 30px;
-        text-align: center;
-        grid-column: 1 / -1;
-        grid-row: 4/5;
-        align-self: center;
-    }
-    
-    /* start project samples */ 
-
-    .matchFlag {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .numberGuess {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .metro {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .futurama {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .pixarReact {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .weather {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .nytreact {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    
-    .itunes {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-
-    .brooklyn {
-        grid-column: 3/4;
-        grid-row: 5/6;
-    }
-
-    .wordGuess {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-
-    .ezcycle {
-        grid-column: 2/3;
-        grid-row: 7/8;
-    }
-
-    .grids {
-        grid-column: 3/4;
-        grid-row: 7/8;
-    }
-
-}
 /* end desktop project samples */
 /* end projectsContainer ------------------- */
 
