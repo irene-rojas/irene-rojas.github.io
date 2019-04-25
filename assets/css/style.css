@@ -4,7 +4,7 @@ body {
 }
 
 .parallax {
-    height: 100vh;
+    height: 100%;
     background-image: url("../../assets/images/cherry_sunrise3.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -37,6 +37,10 @@ a:link {
 
 p {
     margin: 0px;
+}
+
+img {
+    width: 300px;
 }
 
 /* mobile */
@@ -310,11 +314,13 @@ p {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 20rem auto 75px 1fr;
+        grid-template-rows: 35rem auto auto 1fr;
         height: 100vh;
     }
 
+
     .aboutContainer {
+        /* in masterContainer */
         grid-column: 2/12;
         grid-row: 2/3;
         background-color: white;
@@ -329,17 +335,32 @@ p {
         padding: 0px 5px 5px 0px;
     }
 
-    .projectsIntro {
-        grid-column: 2/12;
-        grid-row: 3/4;
+    #downloadResume {
+        padding-left: 10px;
     }
 
+
+    .projectsIntro {
+        /* in masterContainer */
+        grid-row: 3/4;
+        grid-column: 2/12;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        align-self: center;
+        margin-top: 100px;
+    }
+
+
     .projectsContainer {
-        grid-column: 1 / -1;
+        /* in masterContainer */
         grid-row: 4/5;
+        grid-column: 1/-1;
+        /* in projectsContainer */
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(3, 1fr);
         place-items: center;
         grid-row-gap: 30px;
         text-align: center;
