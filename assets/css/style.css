@@ -232,23 +232,19 @@ p {
 
 
 
-/* desktop */
-/* @media (min-width: 769px) {
 
-    .masterContainer {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 80px 200px 150px 75px 1fr;
-    }
+
+
+
+/* desktop */
+@media (min-width: 769px) {
 
     .header {
-        grid-row: 1/2;
-        grid-column: 1/-1;
         display: grid;
         grid-template-rows: 80px;
         grid-template-columns: repeat(12, 1fr);
         align-self: center;
-        background-color: white;
+        background-color: blue;
     }
 
     #ireneRojas {
@@ -275,6 +271,12 @@ p {
         grid-column: 11/12;
         grid-row: 1 / 2;
         text-align: right;
+    }
+
+    .masterContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 80px 200px 150px 75px 1fr;
     }
 
     .aboutContainer {
@@ -366,7 +368,7 @@ p {
         grid-row: 7/8;
     }
 
-} */
+}
 /* end desktop */
 
 
