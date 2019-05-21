@@ -71,7 +71,7 @@ img {
 
     .header {
         display: grid;
-        grid-template-rows: repeat(4 , auto);
+        grid-template-rows: repeat(6 , auto);
         grid-template-columns: 1fr;
         background-color: white;
         text-align: center;
@@ -108,7 +108,7 @@ img {
         border-bottom: 1px solid gray;
     }
 
-    .navProjects {
+    .navDataProjects {
         /* in header */
         grid-row: 2/3;
         grid-column: 1/-1;
@@ -116,15 +116,22 @@ img {
         padding-top: 10px;
     }
 
-    .navGithub {
+    .navGameProjects {
+        /* in header */
         grid-row: 3/4;
+        grid-column: 1/-1;
+        font-size: 12pt;
+    }
+
+    .navGithub {
+        grid-row: 4/5;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 5px;
     }
 
     .navSWM {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 5px;
