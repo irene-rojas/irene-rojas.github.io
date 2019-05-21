@@ -335,13 +335,13 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 30rem auto 75px auto auto 75px auto auto 1fr;
+        grid-template-rows: 32rem auto 50px auto auto 50px auto auto 1fr;
         /* rem = empty space */
         /* auto1 =  aboutContainer*/
-        /* 75px = dataAnchor */
+        /* 50px = dataAnchor */
         /* auto2 = dataIntro */
         /* auto3 =  dataProjects*/
-        /* 75px = gameAnchor */
+        /* 50px = gameAnchor */
         /* auto4 =  gameIntro*/
         /* auto5 = gameProjects */
         /* 1fr = bottom */
