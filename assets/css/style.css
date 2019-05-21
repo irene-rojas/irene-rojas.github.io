@@ -355,22 +355,22 @@ img {
     }
 
 
-    .projectsIntro {
+    /* .projectsIntro { */
         /* in masterContainer */
-        grid-row: 3/4;
-        grid-column: 2/12;
-        background-color: white;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: center;
-        align-self: center;
-        margin-top: 100px;
-    }
+        /* grid-row: 3/4; */
+        /* grid-column: 2/12; */
+        /* background-color: white; */
+        /* border-radius: 5px; */
+        /* padding: 10px; */
+        /* text-align: center; */
+        /* align-self: center; */
+        /* margin-top: 100px; */
+    /* } */
 
 
     .projectsContainer {
         /* in masterContainer */
-        grid-row: 4/5;
+        grid-row: 3/4;
         grid-column: 1/-1;
         /* in projectsContainer */
         display: grid;
@@ -383,6 +383,11 @@ img {
         margin-top: 50px;
     }
     
+    .dataIntro {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        background-color: white;
+    }
 
     .matchFlag {
         grid-column: 1/2;
