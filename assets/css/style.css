@@ -69,6 +69,7 @@ img {
         background-size: cover;
     }
 
+    /* start header */
     .header {
         display: grid;
         grid-template-rows: repeat(6 , auto);
@@ -124,6 +125,7 @@ img {
     }
 
     .navGithub {
+        /* in header */
         grid-row: 4/5;
         grid-column: 1/-1;
         font-size: 12pt;
@@ -131,17 +133,20 @@ img {
     }
 
     .navSWM {
+        /* in header */
         grid-row: 5/6;
         grid-column: 1/-1;
         font-size: 12pt;
         padding-top: 5px;
     }
+    /* end header */
 
     
+    /* start masterContainer */
     .masterContainer {
         display: grid;
         grid-template-columns: 10px 1fr 10px;
-        grid-template-rows: repeat(2, auto) 1fr;
+        grid-template-rows: repeat(5, auto) 1fr;
         height: 100%;
         text-align: center;
     }
@@ -167,7 +172,7 @@ img {
         padding: 10px 0px 15px 0px;
     }
 
-    .projectsIntro {
+    .dataIntro {
         /* in master */
         grid-row: 2/3;
         grid-column: 2/3;
@@ -178,9 +183,10 @@ img {
         margin-top: 150px;
     }
 
-    .projectsContainer {
+    /* start dataProjects */
+    .dataProjects {
         /* in master */
-        grid-row: 3/-1;
+        grid-row: 3/4;
         grid-column: 2/3;
         /* in projects */
         display: grid;
@@ -191,65 +197,103 @@ img {
         padding-top: 15px;
     }    
 
-    .matchFlag {
-        grid-column: 1/-1;
+    .nytreact {
         grid-row: 1/2;
-    }
-    
-    .numberGuess {
         grid-column: 1/-1;
-        grid-row: 3/4;
     }
-    
+
     .metro {
+        grid-row: 3/4;
         grid-column: 1/-1;
+    }
+
+    .weather {
         grid-row: 5/6;
+        grid-column: 1/-1;
+    }
+
+    .itunes {
+        grid-row: 7/8;
+        grid-column: 1/-1;
+    }
+
+    .wordGuess {
+        grid-row: 9/10;
+        grid-column: 1/-1;
+    }
+
+    .emergencyRooms {
+        grid-row: 11/12;
+        grid-column: 1/-1;
+    }
+
+    .ezcycle {
+        grid-row: 13/14;
+        grid-column: 1/-1;
+    }
+    /* end dataProjects */
+
+
+
+    
+
+    
+
+    .gameIntro {
+        /* in master */
+        grid-row: 4/5;
+        grid-column: 2/3;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 150px;
+    }
+
+    /* start gameProjects */
+    .gameProjects {
+        /* in master */
+        grid-row: 5/6;
+        grid-column: 1/-1;
+        /* in projects */
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-row-gap: 30px;
+        padding-top: 15px;
+    }
+
+    .matchFlag {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    .numberGuess {
+        grid-row: 3/4;
+        grid-column: 1/-1;
     }
     
     .futurama {
+        grid-row: 5/6;
         grid-column: 1/-1;
-        grid-row: 7/8;
     }
     
     .pixarReact {
+        grid-row: 7/8;
         grid-column: 1/-1;
-        grid-row: 9/10;
     }
-    
-    .weather {
-        grid-column: 1/-1;
-        grid-row: 11/12;
-    }
-    
-    .nytreact {
-        grid-column: 1/-1;
-        grid-row: 13/14;
-    }
-    
-    .itunes {
-        grid-column: 1/-1;
-        grid-row: 15/16;
-    }
-    
+
     .brooklyn {
+        grid-row: 9/10;
         grid-column: 1/-1;
-        grid-row: 17/18;
-    }
-    
-    .wordGuess {
-        grid-column: 1/-1;
-        grid-row: 19/20;
-    }
-    
-    .ezcycle {
-        grid-column: 1/-1;
-        grid-row: 21/22;
     }
     
     .grids {
+        grid-row: 11/12;
         grid-column: 1/-1;
-        grid-row: 23/24;
     }
+    /* end masterContainer */
     
 }
 /* end mobile */
