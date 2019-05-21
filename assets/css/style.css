@@ -329,7 +329,14 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 35rem auto auto 1fr;
+        grid-template-rows: 35rem repeat(5, auto) 1fr;
+        /* 35rem = empty space */
+        /* auto1 =  aboutContainer*/
+        /* auto2 = dataIntro */
+        /* auto3 =  dataProjects*/
+        /* auto4 =  gameIntro*/
+        /* auto5 = gameProjects */
+        /* 1fr = bottom */
         height: 100%;
     }
 
@@ -354,23 +361,21 @@ img {
         padding-left: 10px;
     }
 
-
-    /* .projectsIntro { */
-        /* in masterContainer */
-        /* grid-row: 3/4; */
-        /* grid-column: 2/12; */
-        /* background-color: white; */
-        /* border-radius: 5px; */
-        /* padding: 10px; */
-        /* text-align: center; */
-        /* align-self: center; */
-        /* margin-top: 100px; */
-    /* } */
-
-
-    .projectsContainer {
+    .dataIntro {
         /* in masterContainer */
         grid-row: 3/4;
+        grid-column: 4/10;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .dataProjects {
+        /* in masterContainer */
+        grid-row: 4/5;
         grid-column: 1/-1;
         /* in projectsContainer */
         display: grid;
@@ -380,73 +385,95 @@ img {
         grid-row-gap: 30px;
         text-align: center;
         align-self: center;
-        margin-top: 50px;
-    }
-    
-    .dataIntro {
-        grid-row: 1/2;
-        grid-column: 1/-1;
-        background-color: white;
-    }
-
-    .matchFlag {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .numberGuess {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .metro {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .futurama {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .pixarReact {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .weather {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .nytreact {
-        grid-column: 1/2;
-        grid-row: 5/6;
+        margin-top: 25px;
     }
     
     .itunes {
-        grid-column: 2/3;
-        grid-row: 5/6;
+        grid-row: 1/2;
+        grid-column: 1/2;
     }
 
-    .brooklyn {
-        grid-column: 3/4;
-        grid-row: 5/6;
+    .nytreact {
+        grid-row: 1/2;
+        grid-column: 2/3;
     }
 
     .wordGuess {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .metro {
+        grid-row: 3/4;
         grid-column: 1/2;
-        grid-row: 7/8;
+    }
+
+    .weather {
+        grid-row: 3/4;
+        grid-column: 2/3;
     }
 
     .ezcycle {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+
+
+    .gameIntro {
+        /* in masterContainer */
+        grid-row: 5/6;
+        grid-column: 4/10;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .gameProjects {
+        /* in masterContainer */
+        grid-row: 6/7;
+        grid-column: 1/-1;
+        /* in projectsContainer */
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        grid-row-gap: 30px;
+        text-align: center;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .matchFlag {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .numberGuess {
+        grid-row: 1/2;
         grid-column: 2/3;
-        grid-row: 7/8;
+    }
+
+    .futurama {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .pixarReact {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .brooklyn {
+        grid-row: 3/4;
+        grid-column: 2/3;
     }
 
     .grids {
+        grid-row: 3/4;
         grid-column: 3/4;
-        grid-row: 7/8;
     }
 
 }
