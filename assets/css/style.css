@@ -111,33 +111,28 @@ img {
 
     .navDataProjects {
         /* in header */
-        grid-row: 2/3;
-        grid-column: 1/-1;
-        font-size: 12pt;
-        padding-top: 10px;
+        display: none
     }
 
     .navGameProjects {
         /* in header */
-        grid-row: 3/4;
-        grid-column: 1/-1;
-        font-size: 12pt;
+        display: none
     }
 
     .navGithub {
         /* in header */
-        grid-row: 4/5;
+        grid-row: 2/3;
         grid-column: 1/-1;
         font-size: 12pt;
-        padding-top: 5px;
+        padding: 10px 0px 5px 0px;
     }
 
     .navSWM {
         /* in header */
-        grid-row: 5/6;
+        grid-row: 3/4;
         grid-column: 1/-1;
         font-size: 12pt;
-        padding-top: 5px;
+        padding: 5px 5px 0px 5px;
     }
     /* end header */
 
@@ -146,19 +141,27 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: 10px 1fr 10px;
-        grid-template-rows: repeat(5, auto) 1fr;
+        grid-template-rows: 14rem auto 75px auto auto 100px auto auto 1fr;
+        /* rem = empty space */
+        /* auto1 =  aboutContainer*/
+        /* 75px = dataAnchor */
+        /* auto2 = dataIntro */
+        /* auto3 =  dataProjects*/
+        /* 100px = gameAnchor */
+        /* auto4 =  gameIntro*/
+        /* auto5 = gameProjects */
+        /* 1fr = bottom */
         height: 100%;
         text-align: center;
     }
 
     .aboutContainer {
         /* in master */
-        grid-row: 1/2;
+        grid-row: 2/3;
         grid-column: 2/3;
         background-color: white;
         padding: 10px;
         border-radius: 5px;
-        margin-top: 11rem;
     }
     
     #ireneRojasPhoto {
@@ -169,24 +172,29 @@ img {
     }
     
     #aboutText {
-        padding: 10px 0px 15px 0px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .dataAnchor {
+        /* in master */
+        grid-row: 3/4;
+        grid-column: 2/3;
     }
 
     .dataIntro {
         /* in master */
-        grid-row: 2/3;
+        grid-row: 4/5;
         grid-column: 2/3;
         background-color: white;
         border-radius: 5px;
         text-align: center;
         padding: 10px;
-        margin-top: 150px;
     }
 
     /* start dataProjects */
     .dataProjects {
         /* in master */
-        grid-row: 3/4;
+        grid-row: 5/6;
         grid-column: 2/3;
         /* in projects */
         display: grid;
@@ -233,27 +241,26 @@ img {
     }
     /* end dataProjects */
 
-
-
-    
-
-    
+    .gameAnchor {
+        /* in master */
+        grid-row: 6/7;
+        grid-column: 2/3;
+    }
 
     .gameIntro {
         /* in master */
-        grid-row: 4/5;
+        grid-row: 7/8;
         grid-column: 2/3;
         background-color: white;
         border-radius: 5px;
         text-align: center;
         padding: 10px;
-        margin-top: 150px;
     }
 
     /* start gameProjects */
     .gameProjects {
         /* in master */
-        grid-row: 5/6;
+        grid-row: 8/9;
         grid-column: 1/-1;
         /* in projects */
         display: grid;
