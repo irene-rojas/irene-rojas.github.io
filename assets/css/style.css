@@ -436,7 +436,7 @@ img {
         grid-column: 1/2;
     }
 
-    .gameAnchor {
+    #gameAnchor {
         /* in masterContainer */
         grid-row: 6/7;
         grid-column: 1/-1;
