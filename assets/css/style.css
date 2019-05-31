@@ -459,39 +459,45 @@ img {
         margin: 25px 0px 25px 0px;
     }
 
-    .nytreact {
+    .nasa {
         grid-row: 1/2;
         grid-column: 1/2;
     }
+
 
     .metro {
         grid-row: 1/2;
         grid-column: 2/3;
     }
 
-    .weather {
+    .nytreact {
         grid-row: 1/2;
         grid-column: 3/4;
     }
 
-    .itunes {
+    .weather {
         grid-row: 3/4;
         grid-column: 1/2;
     }
 
-    .wordGuess {
+    .itunes {
         grid-row: 3/4;
         grid-column: 2/3;
     }
 
-    .emergencyRooms {
+    .wordGuess {
         grid-row: 3/4;
         grid-column: 3/4;
     }
 
-    .ezcycle {
+    .emergencyRooms {
         grid-row: 5/6;
         grid-column: 1/2;
+    }
+
+    .ezcycle {
+        grid-row: 5/6;
+        grid-column: 2/3;
     }
 
     #gameAnchor {
