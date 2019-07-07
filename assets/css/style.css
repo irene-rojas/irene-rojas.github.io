@@ -392,8 +392,8 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 32rem auto 50px auto auto 50px auto auto 1fr;
-        /* rem = empty space */
+        grid-template-rows: 75px auto 50px auto auto 50px auto auto 1fr;
+        /* 75px = empty space */
         /* auto1 =  aboutContainer*/
         /* 50px = dataAnchor */
         /* auto2 = dataIntro */
