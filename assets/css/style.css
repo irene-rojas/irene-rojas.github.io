@@ -385,6 +385,7 @@ img {
         grid-column: 10/11;
         grid-row: 1/2;
         align-self: center;
+        /* justify-self: center; */
     }
 
     .navSWM {
