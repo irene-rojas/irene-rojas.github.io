@@ -13,18 +13,8 @@ a:link {
     padding: 0px;
 }
 
-/* .navZoom {
-    transition: transform 0.2s;
-    margin: 0 auto;
-} */
-
-/* .navZoom:hover {
-    transform: scale(1.05); 
-} */
-
-.redLink:hover {
-    color: red !important;
-    padding: 0px;
+a:hover {
+    color: rgb(40, 59, 120);
 }
 
 p {
