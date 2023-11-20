@@ -5,16 +5,9 @@ body {
 }
 
 a {
-    color: black;
-}
-
-a:link {
+    color: #960000;
     text-decoration: none;
     padding: 0px;
-}
-
-a:hover {
-    color: #960000;
 }
 
 p {
@@ -44,11 +37,6 @@ img {
 .cardCaption {
     padding: 5px;
 }
-
-
-
-
-
 
 
 /* mobile */
@@ -567,10 +555,3 @@ img {
 
 }
 /* end desktop */
-
-
-
-
-
-
-
