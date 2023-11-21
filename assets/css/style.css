@@ -209,23 +209,23 @@ img {
         grid-column: 1/-1;
     }
 
-    .itunes {
+    /* .itunes {
+        grid-row: 9/10;
+        grid-column: 1/-1;
+    } */
+
+    .wordGuess {
         grid-row: 9/10;
         grid-column: 1/-1;
     }
 
-    .wordGuess {
+    .emergencyRooms {
         grid-row: 11/12;
         grid-column: 1/-1;
     }
 
-    .emergencyRooms {
-        grid-row: 13/14;
-        grid-column: 1/-1;
-    }
-
     .ezcycle {
-        grid-row: 15/16;
+        grid-row: 13/14;
         grid-column: 1/-1;
     }
     /* end dataProjects */
@@ -469,24 +469,24 @@ img {
         grid-column: 2/3;
     }
 
-    .itunes {
+    /* .itunes {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    } */
+
+    .wordGuess {
         grid-row: 3/4;
         grid-column: 3/4;
     }
 
-    .wordGuess {
+    .emergencyRooms {
         grid-row: 5/6;
         grid-column: 1/2;
     }
 
-    .emergencyRooms {
-        grid-row: 5/6;
-        grid-column: 2/3;
-    }
-
     .ezcycle {
         grid-row: 5/6;
-        grid-column: 3/4;
+        grid-column: 2/3;
     }
 
 
