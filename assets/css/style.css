@@ -125,13 +125,11 @@ img {
     .masterContainer {
         display: grid;
         grid-template-columns: 10px 1fr 10px;
-        grid-template-rows: 14rem auto 75px auto auto 100px auto auto 1fr;
-        /* rem = empty space */
+        grid-template-rows: repeat(auto, 6) 1fr;
+        /* auto = empty space behind header */
         /* auto1 =  aboutContainer*/
-        /* 75px = dataAnchor */
         /* auto2 = dataIntro */
         /* auto3 =  dataProjects*/
-        /* 100px = gameAnchor */
         /* auto4 =  gameIntro*/
         /* auto5 = gameProjects */
         /* 1fr = bottom */
@@ -146,6 +144,7 @@ img {
         background-color: white;
         padding: 10px;
         border-radius: 5px;
+        margin-top: 15px;
     }
     
     #ireneRojasPhoto {
@@ -159,20 +158,15 @@ img {
         padding: 10px 0px 0px 0px;
     }
 
-    .dataAnchor {
-        /* in master */
-        grid-row: 3/4;
-        grid-column: 2/3;
-    }
-
     .dataIntro {
         /* in master */
-        grid-row: 4/5;
+        grid-row: 3/4;
         grid-column: 2/3;
         background-color: white;
         border-radius: 5px;
         text-align: center;
         padding: 10px;
+        margin-top: 40px;
     }
 
     /* start dataProjects */
@@ -209,11 +203,6 @@ img {
         grid-column: 1/-1;
     }
 
-    /* .itunes {
-        grid-row: 9/10;
-        grid-column: 1/-1;
-    } */
-
     .wordGuess {
         grid-row: 9/10;
         grid-column: 1/-1;
@@ -230,20 +219,15 @@ img {
     }
     /* end dataProjects */
 
-    .gameAnchor {
-        /* in master */
-        grid-row: 6/7;
-        grid-column: 2/3;
-    }
-
     .gameIntro {
         /* in master */
-        grid-row: 7/8;
+        grid-row: 6/7;
         grid-column: 2/3;
         background-color: white;
         border-radius: 5px;
         text-align: center;
         padding: 10px;
+        margin-top: 50px;
     }
 
     /* start gameProjects */
@@ -293,7 +277,6 @@ img {
     
 }
 /* end mobile */
-
 
 
 
