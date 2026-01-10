@@ -17,6 +17,12 @@ a {
     text-decoration: underline;
 }
 
+h1, h2, h3 {
+    font-family: "Avenir Next";
+    font-size: 100%;
+    margin: 0px;
+}
+
 p {
     margin: 0px;
 }
