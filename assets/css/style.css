@@ -9,15 +9,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #960000;
-    color: #ffffff;
+.titleLink:hover {
+    text-decoration: none;
 }
 
-.ireneNameTitle:hover {
-    color: #960000;
-    text-decoration: none;
-    padding: 0px;
+.underlineLink:hover {
+    text-decoration: underline;
 }
 
 p {
