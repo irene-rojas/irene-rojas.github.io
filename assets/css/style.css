@@ -7,6 +7,16 @@ body {
 a {
     color: #960000;
     text-decoration: none;
+}
+
+a:hover {
+    background-color: #960000;
+    color: #ffffff;
+}
+
+.ireneNameTitle:hover {
+    color: #960000;
+    text-decoration: none;
     padding: 0px;
 }
 
