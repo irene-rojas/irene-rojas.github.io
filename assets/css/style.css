@@ -7,7 +7,14 @@ body {
 a {
     color: #960000;
     text-decoration: none;
-    padding: 0px;
+}
+
+.titleLink:hover {
+    text-decoration: none;
+}
+
+.underlineLink:hover {
+    text-decoration: underline;
 }
 
 p {
