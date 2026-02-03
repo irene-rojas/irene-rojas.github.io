@@ -201,7 +201,7 @@ img {
         grid-column: 1/-1;
     }
 
-    .nytreact {
+    .parks {
         grid-row: 3/4;
         grid-column: 1/-1;
     }
@@ -226,10 +226,10 @@ img {
         grid-column: 1/-1;
     }
 
-    .ezcycle {
+    /* .ezcycle {
         grid-row: 13/14;
         grid-column: 1/-1;
-    }
+    } */
     /* end dataProjects */
 
     .gameIntro {
@@ -448,29 +448,19 @@ img {
         grid-column: 3/4;
     }
 
-    .nytreact {
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-
     .congress {
         grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column: 1/2;
     }
 
     .wordGuess {
         grid-row: 3/4;
-        grid-column: 3/4;
+        grid-column: 2/3;
     }
 
     .emergencyRooms {
-        grid-row: 5/6;
-        grid-column: 1/2;
-    }
-
-    .ezcycle {
-        grid-row: 5/6;
-        grid-column: 2/3;
+        grid-row: 3/4;
+        grid-column: 3/4;
     }
 
     .gameIntro {
